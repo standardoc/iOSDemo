@@ -1,6 +1,6 @@
-####这个Demo是作为原生iOS的项目框架整理，希望能够统一以这种方式去构建iOS项目
+#### 这个Demo是作为原生iOS的项目框架整理，希望能够统一以这种方式去构建iOS项目
 
-#####一、项目结构说明：
+##### 一、项目结构说明：
 
 项目的第三方库以CocoaPods工具管理，安装好CocoaPods后使用.xcworkspace打开项目  
 
@@ -28,7 +28,7 @@ Tools: 这个文件夹下边，存放公共的工具类，网络请求封装，�
 
 ---
 
-#####二、技术栈
+##### 二、技术栈
 	
 网络通讯：NSURLSession、AFNetworking
 
@@ -42,11 +42,13 @@ Tools: 这个文件夹下边，存放公共的工具类，网络请求封装，�
 
 * FMDB：是iOS平台的SQLite数据库框架，FMDB以OC的方式封装了SQLite的C语言API
 
-页面布局：StoryBoard、Masonry
+页面布局：StoryBoard、Masonry、XIB
 
-* StoryBoard: iOS提供的方便实现UI约束布局的方式，AutoLayout效率高
+* StoryBoard: iOS提供的方便实现UI约束布局的方式，AutoLayout效率高，用来搭建项目整体框架
 
 * Masonry: 是一个轻量级的布局框架，采用优雅的链式语法，是实现纯代码布局的最佳方式
+
+* XIB：实现小的、不复杂的布局比较方便
 
 单元测试：XCTest
 
@@ -62,7 +64,7 @@ Tools: 这个文件夹下边，存放公共的工具类，网络请求封装，�
 
 ---
 
-#####三、统一规范
+##### 三、统一规范
 
 1. 项目目录结构如上统一
 2. 视图使用StoryBoard和Masonry相结合的方式，Masonry适用于页面十分复杂的情况
